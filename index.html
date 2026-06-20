@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perguntas Frequentes • Mestrado em Direito UEPG</title>
+  <meta name="description" content="FAQ em Linguagem Simples sobre o Mestrado Profissional em Direito da UEPG. 15 perguntas essenciais para novos ingressantes."/>
+  <meta name="theme-color" content="#002855"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+  <style>
+    /* =====================================================
+       TOKENS & TEMA
+       ===================================================== */
+    :root {
+      --azul:        #002855;
+      --azul-meio:   #1a4a80;
+      --azul-claro:  #e8f0fb;
+      --ouro:        #c9a135;
+      --ouro-claro:  #fdf6e3;
+      --magenta:     #c2185b;
+      --magenta-claro: #fce4ec;
+      --fundo:       #f7f8fb;
+      --fundo-card:  #ffffff;
+      --texto:       #1a1f2e;
+      --texto-suave: #4a5568;
+      --borda:       #dde3ed;
+      --ff-titulo: 'DM Serif Display', serif;
+      --ff-corpo:  'DM Sans', sans-serif;
+      --r-sm: 8px; --r-md: 12px; --r-lg: 16px; --r-xl: 24px;
+      --shadow-sm: 0 1px 3px rgba(0,40,85,.07);
+      --shadow-md: 0 4px 16px rgba(0,40,85,.10);
+    }
+
+    [data-tema="escuro"] {
+      --azul:        #4a8fd4;
+      --azul-meio:   #6aaae8;
+      --azul-claro:  #132136;
+      --ouro:        #e6c15a;
+      --ouro-claro:  #1e1800;
+      --magenta:     #e91e8c;
+      --magenta-claro: #3a0c24;
+      --fundo:       #0e1217;
+      --fundo-card:  #161c26;
+      --texto:       #e8edf5;
+      --texto-suave: #8fa0bc;
+      --borda:       #252e3d;
+      --shadow-sm:   0 1px 3px rgba(0,0,0,.3);
+      --shadow-md:   0 4px 16px rgba(0,0,0,.4);
+    }
+
+    /* =====================================================
+       RESET & BASE
+       ===================================================== */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;font-size:16px;}
+    body{
+      font-family:var(--ff-corpo);
+      font-size:1rem;
+      line-height:1.75;
+      color:var(--texto);
+      background:var(--fundo);
+      transition:background .3s,color .3s;
+    }
+    img{max-width:100%;height:auto;display:block;object-fit:contain;}
+    a{color:var(--azul);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    :focus-visible{outline:3px solid var(--ouro);outline-offset:3px;border-radius:4px;}
+
+    /* Skip link (WCAG 2.4.1) */
+    .skip-link{
+      position:absolute;left:-9999px;top:0;
+      background:var(--azul);color:#fff;
+      padding:.5rem 1rem;border-radius:0 0 var(--r-sm) var(--r-sm);
+      font-weight:600;font-size:.9rem;z-index:9999;
+    }
+    .skip-link:focus{left:50%;transform:translateX(-50%);outline:none;}
+
+    /* =====================================================
+       ACESSIBILIDADE eMAG
+       ===================================================== */
+    .accessibility-shortcuts {
+      background: #0c4a6e;
+      color: white;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      font-family: var(--ff-corpo);
+    }
+    .accessibility-shortcuts a {
+      color: #fcd34d;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    .accessibility-shortcuts a:hover { text-decoration: underline; }
+    .acessibilidade-info {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      border-top: 1px solid var(--borda);
+      padding-top: 15px;
+      color: var(--texto-suave);
+      text-align: center;
+      background: var(--fundo-card);
+      border-radius: 1rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    kbd {
+      background: #1e293b;
+      color: white;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.3rem;
+      font-family: monospace;
+    }
+
+    /* =====================================================
+       CABEÇALHO
+       ===================================================== */
+    .header {
+      background: linear-gradient(135deg, #002855 0%, #1a3a6a 100%);
+      color: #fff;
+      padding: 1.5rem 0;
+      border-bottom: 4px solid var(--ouro);
+    }
+    .header-grid {
+      display: grid;
+      grid-template-columns: 1.2fr auto 1fr;
+      gap: 1.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      align-items: center;
+    }
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+    .header-lab-name {
+      font-family: var(--ff-titulo);
+      font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+      font-weight: 700;
+      margin: 0 0 0.15rem 0;
+      line-height: 1.2;
+      color: #fff;
+    }
+    .header-lab-desc {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin: 0 0 0.35rem 0;
+      color: var(--ouro);
+      opacity: 0.95;
+    }
+    .header-institution {
+      font-size: 0.82rem;
+      opacity: 0.85;
+      line-height: 1.4;
+      margin: 0;
+      font-style: italic;
+      border-left: 2px solid rgba(201,161,53,0.4);
+      padding-left: 0.75rem;
+    }
+    .header-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      min-height: 60px;
+    }
+    .header-logo {
+      height: 48px;
+      width: auto;
+      max-width: 120px;
+      filter: brightness(0) invert(1);
+      opacity: 0.95;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .header-logo:hover { opacity: 1; transform: scale(1.03); }
+    .header-logo.uepg-center { height: 60px; }
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      text-align: right;
+      gap: 0.6rem;
+    }
+    .header-guide-title {
+      font-family: var(--ff-titulo);
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      font-weight: 700;
+      margin: 0 0 0.35rem 0;
+      line-height: 1.2;
+    }
+    .header-guide-subtitle {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      margin: 0 0 0.5rem 0;
+    }
+
+    /* Toggle de tema */
+    .btn-tema {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1200;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #002855;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn-tema:hover { transform: scale(1.1); }
+    [data-tema="escuro"] .btn-tema { background: var(--ouro); color: #002855; }
+
+    /* =====================================================
+       BUSCA
+       ===================================================== */
+    .busca-wrap{background:var(--azul-claro);padding:.75rem 1.5rem;border-bottom:1px solid var(--borda);}
+    .busca-inner{max-width:1200px;margin:0 auto;position:relative;}
+    .busca-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--texto-suave);pointer-events:none;}
+    .busca-input{
+      width:100%;padding:.65rem 1rem .65rem 2.75rem;
+      border:1.5px solid var(--borda);border-radius:var(--r-md);
+      background:var(--fundo-card);color:var(--texto);
+      font-family:var(--ff-corpo);font-size:.95rem;
+      transition:border-color .2s,box-shadow .2s;
+    }
+    .busca-input:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(0,40,85,.12);}
+    .sem-resultado{
+      display:none;text-align:center;
+      padding:.75rem;margin-top:.5rem;
+      background:var(--fundo-card);border-radius:var(--r-sm);
+      color:var(--texto-suave);font-size:.9rem;font-style:italic;
+    }
+
+    /* =====================================================
+       LAYOUT PRINCIPAL
+       ===================================================== */
+    .main{max-width:1200px;margin:0 auto;padding:2rem 1.5rem;}
+
+    /* Seção visual */
+    .secao-visual{
+      background:var(--fundo-card);
+      border:1px solid var(--borda);
+      border-radius:var(--r-xl);
+      padding:2rem;
+      margin:1.5rem 0;
+      box-shadow:var(--shadow-sm);
+    }
+    .secao-visual h2{
+      font-family:var(--ff-titulo);
+      font-size:1.4rem;color:var(--azul);
+      margin-bottom:1.5rem;
+      display:flex;align-items:center;gap:.6rem;
+    }
+
+    /* Nota prática */
+    .nota{
+      background:var(--ouro-claro);
+      border-left:3px solid var(--ouro);
+      border-radius:0 var(--r-sm) var(--r-sm) 0;
+      padding:.75rem 1rem;margin:.75rem 0;
+      font-size:.9rem;
+    }
+    [data-tema="escuro"] .nota{background:rgba(201,161,53,.08);}
+
+    /* =====================================================
+       FAQ ACCORDION (WCAG 2.1)
+       ===================================================== */
+    .faq-lista{display:flex;flex-direction:column;gap:.75rem;}
+    .faq-item{
+      background:var(--fundo-card);
+      border:1px solid var(--borda);
+      border-left:4px solid var(--azul);
+      border-radius:0 var(--r-md) var(--r-md) 0;
+      overflow:hidden;
+      transition:box-shadow .2s;
+    }
+    .faq-item:hover{box-shadow:var(--shadow-md);}
+    .faq-pergunta{
+      width:100%;
+      display:flex;align-items:center;gap:.75rem;
+      padding:1rem 1.25rem;
+      background:transparent;
+      border:none;
+      cursor:pointer;
+      text-align:left;
+      font-family:var(--ff-corpo);
+      font-size:1rem;
+      font-weight:600;
+      color:var(--azul);
+      line-height:1.4;
+      transition:background .15s;
+    }
+    .faq-pergunta:hover{background:var(--azul-claro);}
+    [data-tema="escuro"] .faq-pergunta{color:var(--azul-meio);}
+    .faq-numero{
+      flex-shrink:0;
+      width:32px;height:32px;
+      background:var(--azul);color:#fff;
+      border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      font-family:var(--ff-titulo);font-size:.95rem;
+    }
+    [data-tema="escuro"] .faq-numero{background:var(--azul-meio);color:#002855;}
+    .faq-icon{
+      flex-shrink:0;
+      width:24px;height:24px;
+      margin-left:auto;
+      transition:transform .25s ease;
+      color:var(--azul);
+    }
+    [data-tema="escuro"] .faq-icon{color:var(--azul-meio);}
+    .faq-item.aberto .faq-icon{transform:rotate(45deg);}
+    .faq-resposta{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .35s ease, padding .25s ease;
+      padding:0 1.25rem;
+    }
+    .faq-item.aberto .faq-resposta{
+      max-height:2000px;
+      padding:0 1.25rem 1.25rem;
+    }
+    .faq-resposta-inner{
+      background:var(--azul-claro);
+      border-left:3px solid var(--azul-meio);
+      border-radius:0 var(--r-sm) var(--r-sm) 0;
+      padding:1.25rem;
+      font-size:.95rem;
+      line-height:1.7;
+    }
+    [data-tema="escuro"] .faq-resposta-inner{background:var(--azul-claro);}
+    .faq-resposta-inner p{margin-bottom:.75rem;}
+    .faq-resposta-inner p:last-child{margin-bottom:0;}
+    .faq-resposta-inner strong{color:var(--azul);font-weight:600;}
+    [data-tema="escuro"] .faq-resposta-inner strong{color:var(--azul-meio);}
+    .faq-resposta-inner ul,.faq-resposta-inner ol{padding-left:1.4rem;margin:.5rem 0;}
+    .faq-resposta-inner li{margin:.3rem 0;}
+
+    /* Tabela dentro do FAQ */
+    .faq-tabela{
+      width:100%;border-collapse:collapse;
+      margin:.75rem 0;font-size:.9rem;
+    }
+    .faq-tabela th,.faq-tabela td{
+      padding:.6rem .75rem;
+      border:1px solid var(--borda);
+      text-align:left;
+    }
+    .faq-tabela th{
+      background:var(--azul);color:#fff;
+      font-weight:600;
+    }
+    [data-tema="escuro"] .faq-tabela th{background:var(--azul-meio);color:#002855;}
+    .faq-tabela tr:nth-child(even){background:var(--fundo);}
+
+    /* Categorias do FAQ */
+    .faq-categorias{
+      display:flex;flex-wrap:wrap;gap:.5rem;
+      margin-bottom:1.5rem;
+    }
+    .faq-cat-btn{
+      padding:.4rem .9rem;
+      border:1.5px solid var(--azul);
+      background:#fff;
+      color:var(--azul);
+      border-radius:20px;
+      font-size:.85rem;
+      font-weight:500;
+      cursor:pointer;
+      transition:all .2s;
+      font-family:var(--ff-corpo);
+    }
+    .faq-cat-btn:hover,.faq-cat-btn.ativo{
+      background:var(--azul);color:#fff;
+    }
+    [data-tema="escuro"] .faq-cat-btn{background:var(--fundo-card);}
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+    .footer{
+      background:var(--azul);color:rgba(255,255,255,.85);
+      padding:2rem 0;margin-top:3rem;text-align:center;
+    }
+    .footer a{color:var(--ouro);}
+    .footer-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;}
+    .footer p{margin:.3rem 0;font-size:.88rem;}
+    [data-tema="escuro"] .footer{background:#0a1020;}
+
+    /* =====================================================
+       RESPONSIVO
+       ===================================================== */
+    @media (max-width: 1024px) {
+      .header-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+      }
+      .header-left, .header-right { align-items: center; text-align: center; }
+      .header-center { order: -1; margin-bottom: 0.5rem; }
+      .header-right { align-items: center; }
+      .header-institution {
+        text-align: center;
+        border-left: none;
+        border-top: 2px solid rgba(201,161,53,0.4);
+        padding-left: 0;
+        padding-top: 0.5rem;
+        margin-top: 0.25rem;
+      }
+    }
+    @media (max-width: 640px){
+      .main{padding:1.5rem 1rem;}
+      .secao-visual{padding:1.25rem;}
+      .faq-pergunta{font-size:.95rem;padding:.85rem 1rem;}
+      .faq-numero{width:28px;height:28px;font-size:.85rem;}
+    }
+    @media print{
+      .btn-tema,.busca-wrap,.footer,.accessibility-shortcuts,.acessibilidade-info,[vw],.vw,.enabled,.uwy,.userway-accessibility-widget{
+        display:none!important;
+      }
+      body{color:#000;background:#fff;}
+      .faq-resposta{max-height:none!important;padding:0 1.25rem 1.25rem!important;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== ACESSIBILIDADE eMAG: LINK PULAR CONTEÚDO (WCAG 2.4.1) ===== -->
+<a href="#conteudo" class="skip-link" accesskey="1" title="Ir para o conteúdo principal (Alt + 1)">Pular para o conteúdo principal</a>
+
+<!-- ===== BARRA DE ATALHOS DO TECLADO (eMAG) ===== -->
+<div class="accessibility-shortcuts" aria-label="Atalhos de acessibilidade do teclado">
+  <span>🔑 Atalhos (eMAG):</span>
+  <a href="#conteudo" accesskey="1">Alt + 1</a> = Conteúdo |
+  <a href="#rodape-acessibilidade" accesskey="4">Alt + 4</a> = Rodapé |
+  <a href="#info-acessibilidade" accesskey="0">Alt + 0</a> = Acessibilidade
+</div>
+
+<button class="btn-tema" id="btnTema" aria-label="Alternar modo escuro" title="Alternar tema">🌙</button>
+
+<!-- =====================================================
+     CABEÇALHO
+     ===================================================== -->
+<header class="header" role="banner">
+  <div class="header-grid">
+    
+    <!--  BLOCO ESQUERDO: CEPPODI -->
+    <div class="header-left">
+      <h1 class="header-lab-name">UEPG LegalTechLab</h1>
+      <p class="header-lab-desc">Laboratório de Tecnologia e Inovação em Direito</p>
+      <p class="header-institution">
+        Programas de Pós-graduação Stricto sensu da Universidade Estadual de Ponta Grossa – UEPG
+      </p>
+    </div>
+    
+    <!--  BLOCO CENTRAL: UEPG (ORDEM CORRIGIDA) -->
+    <div class="header-center" aria-label="Instituições parceiras">
+      <img src="img/ceppodi.png" alt="CEPPODI - Centro de Pesquisa e Pós-Graduação em Direito" class="header-logo" 
+           loading="eager" decoding="async"
+           onerror="this.style.display='none'">
+      <img src="img/uepg.png" alt="UEPG - Universidade Estadual de Ponta Grossa" class="header-logo uepg-center" 
+           loading="eager" decoding="async"
+           onerror="this.style.display='none'">
+      <img src="img/secijur.png" alt="SECIJUR - Setor de Ciências Jurídicas" class="header-logo" 
+           loading="eager" decoding="async"
+           onerror="this.style.display='none'">
+    </div>
+    
+    <!-- BLOCO DIREITO: Guia e Links -->
+    <div class="header-right">
+      <h2 class="header-guide-title">⚖️ Dúvidas Frequentes</h2>
+      <p class="header-guide-subtitle">Mestrado Profissional em Direito • Área de concentração: Teorias e Práticas Jurídicas em Perspectiva Translacional</p>
+    </div>
+    
+  </div>
+</header>
+
+<!-- BUSCA -->
+<div class="busca-wrap" role="search">
+  <div class="busca-inner">
+    <svg class="busca-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <label for="buscaInput" class="sr-only">Buscar nas perguntas frequentes</label>
+    <input type="search" id="buscaInput" class="busca-input" placeholder="Buscar pergunta ou tema..." aria-label="Buscar nas perguntas frequentes"/>
+    <p id="semResultado" class="sem-resultado" role="status" aria-live="polite">Nenhum resultado. Tente outro termo.</p>
+  </div>
+</div>
+
+<main id="conteudo" class="main" tabindex="-1">
+
+  <!-- =====================================================
+       SEÇÃO: INTRODUÇÃO
+       ===================================================== -->
+  <section class="secao-visual" aria-labelledby="faq-titulo">
+    <h2 id="faq-titulo">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+      Perguntas Frequentes
+    </h2>
+    <p style="font-size:.95rem;color:var(--texto-suave);margin-bottom:1rem;">
+      📖 <strong>Em Linguagem Simples</strong> — 15 perguntas essenciais para novos ingressantes no Mestrado Profissional em Direito da UEPG.
+    </p>
+    <p class="nota">
+       <strong>Como usar:</strong> clique sobre a pergunta para ver a resposta. Clique novamente para fechar. As perguntas abaixo respondem às dúvidas mais comuns sobre o programa.
+    </p>
+
+    <!-- FILTROS POR CATEGORIA -->
+    <div class="faq-categorias" role="tablist" aria-label="Filtrar perguntas por categoria">
+      <button class="faq-cat-btn ativo" data-categoria="todas" role="tab" aria-selected="true">Todas (15)</button>
+      <button class="faq-cat-btn" data-categoria="geral" role="tab" aria-selected="false">📖 Geral</button>
+      <button class="faq-cat-btn" data-categoria="selecao" role="tab" aria-selected="false">📝 Seleção</button>
+      <button class="faq-cat-btn" data-categoria="curso" role="tab" aria-selected="false">🎓 Curso</button>
+      <button class="faq-cat-btn" data-categoria="pesquisa" role="tab" aria-selected="false">🔬 Pesquisa</button>
+      <button class="faq-cat-btn" data-categoria="administrativo" role="tab" aria-selected="false">🏛️ Administrativo</button>
+    </div>
+
+    <!-- LISTA DE PERGUNTAS -->
+    <div class="faq-lista" id="faqLista" role="list">
+
+      <!-- PERGUNTA 1 -->
+      <div class="faq-item" data-categoria="geral" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-1" id="faq-perg-1">
+          <span class="faq-numero" aria-hidden="true">1</span>
+          <span>O que é o Mestrado em Direito da UEPG?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-1" role="region" aria-labelledby="faq-perg-1">
+          <div class="faq-resposta-inner">
+            <p>É um curso de pós-graduação <strong>stricto sensu</strong> (mestrado) reconhecido pelo MEC, gratuito, com duração de 24 meses. Forma profissionais capazes de aplicar o conhecimento jurídico a problemas reais da sociedade.</p>
+            <p>🎯 <strong>Área de concentração:</strong> Teorias e Práticas Jurídicas em Perspectiva Translacional — conecta pesquisa acadêmica com aplicação prática no sistema de justiça.</p>
+            <p>📜 <strong>Base legal:</strong> Portaria MEC nº 576/2020 e Resolução CEPE nº 2022.13.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 2 -->
+      <div class="faq-item" data-categoria="geral" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-2" id="faq-perg-2">
+          <span class="faq-numero" aria-hidden="true">2</span>
+          <span>Quais são as linhas de pesquisa?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-2" role="region" aria-labelledby="faq-perg-2">
+          <div class="faq-resposta-inner">
+            <p>O programa oferece três linhas de pesquisa interdisciplinares:</p>
+            <table class="faq-tabela">
+              <thead>
+                <tr><th scope="col">Linha</th><th scope="col">Foco principal</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>⚖️ Sistema Penal</td><td>Justiça criminal, criminologia, políticas criminais e violência intrafamiliar.</td></tr>
+                <tr><td>🏛️ Relações Privadas</td><td>Direito civil, família, métodos de solução de conflitos e ordem econômica.</td></tr>
+                <tr><td>🌍 Direitos Fundamentais</td><td>Teorias da justiça, Estado de Direito, políticas públicas e direitos humanos.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 3 -->
+      <div class="faq-item" data-categoria="selecao" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-3" id="faq-perg-3">
+          <span class="faq-numero" aria-hidden="true">3</span>
+          <span>Como funciona o processo seletivo?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-3" role="region" aria-labelledby="faq-perg-3">
+          <div class="faq-resposta-inner">
+            <p><strong>Requisito:</strong> graduação em Direito. A seleção ocorre por edital público, com as seguintes etapas:</p>
+            <p>📝 <strong>1ª etapa:</strong> prova objetiva de conhecimentos em Direito.</p>
+            <p> <strong>2ª etapa:</strong> defesa e arguição do anteprojeto de pesquisa.</p>
+            <p class="nota">️ <strong>Atenção:</strong> é obrigatório apresentar um pré-projeto de pesquisa alinhado com uma das linhas do programa.</p>
+            <p>📢 <strong>Editais em:</strong> <a href="https://www2.uepg.br/direito/mestrado/editais/" target="_blank" rel="noopener noreferrer">www2.uepg.br/direito/mestrado/editais</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 4 -->
+      <div class="faq-item" data-categoria="curso" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-4" id="faq-perg-4">
+          <span class="faq-numero" aria-hidden="true">4</span>
+          <span>Qual a duração e quantos créditos preciso?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-4" role="region" aria-labelledby="faq-perg-4">
+          <div class="faq-resposta-inner">
+            <p><strong>Duração:</strong> 24 meses (prorrogáveis por mais 6 meses, com justificativa).</p>
+            <p><strong>Total de créditos:</strong> 33, distribuídos assim:</p>
+            <table class="faq-tabela">
+              <thead>
+                <tr><th scope="col">Atividade</th><th scope="col">Créditos</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>📘 Formação geral</td><td>09</td></tr>
+                <tr><td>📗 Aprofundamento na linha de pesquisa</td><td>06</td></tr>
+                <tr><td>📙 Aprofundamento de livre escolha</td><td>06</td></tr>
+                <tr><td> Imersão prático-institucional</td><td>04</td></tr>
+                <tr><td>🎤 Disseminação do conhecimento</td><td>04</td></tr>
+                <tr><td>✍️ Pesquisa e escrita acadêmica (ODM I e II)</td><td>04</td></tr>
+              </tbody>
+            </table>
+            <p class="nota">⏰ <strong>Frequência mínima:</strong> 75% em cada disciplina.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 5 -->
+      <div class="faq-item" data-categoria="curso" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-5" id="faq-perg-5">
+          <span class="faq-numero" aria-hidden="true">5</span>
+          <span>Como comprovar proficiência em língua estrangeira?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-5" role="region" aria-labelledby="faq-perg-5">
+          <div class="faq-resposta-inner">
+            <p>Exigência de inglês ou espanhol até o final do 1º semestre. São aceitos:</p>
+            <ul>
+              <li> TOEFL iBT (≥85), IELTS (≥6), TOEFL ITP (≥500)</li>
+              <li>🏆 Cambridge (B, C, "Pass"), DELE (B1), Michigan (≥650)</li>
+              <li>🎓 Teste aplicado pelo PPGD ou pelo Departamento de Letras da UEPG (nota ≥7)</li>
+              <li>📜 Diploma de Letras (inglês/espanhol) ou declaração de IES reconhecida (últimos 2 anos)</li>
+            </ul>
+            <p>📄 <strong>Protocolo de comprovação pelo SEI:</strong> <a href="https://sisei.apps.uepg.br/protocolo-digital" target="_blank" rel="noopener noreferrer">sisei.apps.uepg.br/protocolo-digital</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 6 -->
+      <div class="faq-item" data-categoria="curso" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-6" id="faq-perg-6">
+          <span class="faq-numero" aria-hidden="true">6</span>
+          <span>Posso aproveitar disciplinas de outros programas?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-6" role="region" aria-labelledby="faq-perg-6">
+          <div class="faq-resposta-inner">
+            <p>Sim, conforme IN 8/2024:</p>
+            <ul>
+              <li>✅ Até 3 disciplinas do próprio PPGD/UEPG (como aluno especial).</li>
+              <li>✅ Até 2 disciplinas de outro PPG em Direito (1 da linha + 1 livre escolha).</li>
+              <li>✅ Até 1 disciplina de programa de outra área (livre escolha).</li>
+            </ul>
+            <p class="nota">️ Não se aproveitam disciplinas de formação geral fora do PPGD/UEPG. As disciplinas devem ter sido cursadas no máximo 2 anos antes da matrícula regular.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 7 -->
+      <div class="faq-item" data-categoria="pesquisa" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-7" id="faq-perg-7">
+          <span class="faq-numero" aria-hidden="true">7</span>
+          <span>Como funciona a orientação e o produto final?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-7" role="region" aria-labelledby="faq-perg-7">
+          <div class="faq-resposta-inner">
+            <p>Cada mestrando tem um orientador permanente, que acompanha a pesquisa e o desenvolvimento do produto final.</p>
+            <p>O produto final pode ser:</p>
+            <ul>
+              <li>📑 <strong>Dissertação tradicional</strong> — texto científico sobre um tema.</li>
+              <li>💼 <strong>Formato alternativo</strong> — coletânea de artigos ou produto translacional (manual, software, norma técnica, relatório, campanha etc.), conforme IN 09/2025.</li>
+            </ul>
+            <p class="nota">🎯 <strong>Exame de Qualificação:</strong> obrigatório até o 20º mês de ingresso. Requisitos: créditos concluídos, proficiência em língua estrangeira e 1 artigo aceito em revista Qualis/CAPES ou anais de evento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 8 -->
+      <div class="faq-item" data-categoria="curso" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-8" id="faq-perg-8">
+          <span class="faq-numero" aria-hidden="true">8</span>
+          <span>O que é imersão prático-institucional e estágio de docência?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-8" role="region" aria-labelledby="faq-perg-8">
+          <div class="faq-resposta-inner">
+            <p>🏢 <strong>Imersão prático-institucional (4 créditos):</strong> vivência profissional em instituição relevante para a pesquisa (tribunal, Ministério Público, órgão público, defensoria etc.).</p>
+            <p>🎓 <strong>Estágio de Docência:</strong> obrigatório para bolsistas e recomendado para não-bolsistas. Consiste em auxiliar uma disciplina de graduação por pelo menos 1 semestre, sob supervisão de professor mestre ou doutor. Integra as atividades de disseminação do conhecimento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 9 -->
+      <div class="faq-item" data-categoria="geral" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-9" id="faq-perg-9">
+          <span class="faq-numero" aria-hidden="true">9</span>
+          <span>O que é o LegalTechLab?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-9" role="region" aria-labelledby="faq-perg-9">
+          <div class="faq-resposta-inner">
+            <p>O UEPG LegalTechLab é o Laboratório de Tecnologia e Inovação em Direito, com ênfase em Legal Design, Visual Law e atendimento à comunidade.</p>
+            <ul>
+              <li>👥 Aberto a docentes e discentes do PPGD.</li>
+              <li>📅 Uso mediante agendamento na Secretaria (mínimo 7 dias de antecedência).</li>
+              <li>‍🏫 Exige docente responsável e relatório final.</li>
+            </ul>
+            <p class="nota">💡 O laboratório é um espaço de inovação jurídica, onde se desenvolvem projetos com impacto social real.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 10 -->
+      <div class="faq-item" data-categoria="selecao" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-10" id="faq-perg-10">
+          <span class="faq-numero" aria-hidden="true">10</span>
+          <span>O que são as vagas de fomento institucional?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-10" role="region" aria-labelledby="faq-perg-10">
+          <div class="faq-resposta-inner">
+            <p>São vagas destinadas a profissionais de instituições parceiras do mestrado (tribunais, MP, Defensoria, órgãos públicos etc.), conforme IN 12/2025.</p>
+            <ul>
+              <li>🏛️ A instituição parceira pré-seleciona o candidato e indica o orientador.</li>
+              <li>✅ O candidato fica dispensado da entrevista e avaliação do projeto.</li>
+              <li>📝 Deve realizar apenas a prova de conhecimentos específicos.</li>
+            </ul>
+            <p class="nota">🤝 <strong>Contrapartidas da instituição:</strong> campo de estágio, apoio financeiro para publicações e participação em eventos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 11 -->
+      <div class="faq-item" data-categoria="administrativo" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-11" id="faq-perg-11">
+          <span class="faq-numero" aria-hidden="true">11</span>
+          <span>Posso trancar minha matrícula?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-11" role="region" aria-labelledby="faq-perg-11">
+          <div class="faq-resposta-inner">
+            <p>Sim. Após cursar o primeiro semestre, você pode solicitar trancamento por até 6 meses.</p>
+            <p>É possível um segundo trancamento de até 6 meses, desde que justificado e aprovado pelo Colegiado.</p>
+            <p class="nota">⏸️ <strong>Durante o trancamento,</strong> a contagem do prazo para conclusão do curso fica interrompida.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 12 -->
+      <div class="faq-item" data-categoria="administrativo" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-12" id="faq-perg-12">
+          <span class="faq-numero" aria-hidden="true">12</span>
+          <span>Em quais situações sou desligado do programa?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-12" role="region" aria-labelledby="faq-perg-12">
+          <div class="faq-resposta-inner">
+            <p>Você será desligado se:</p>
+            <ul>
+              <li>❌ Tiver média ponderada inferior a 2,25 no 1º semestre ou inferior a 2,50 acumulada.</li>
+              <li>❌ Receber conceito "D" duas vezes na mesma disciplina.</li>
+              <li>❌ Receber dois conceitos "I" (Incompleto) ou "NS" nas disciplinas de orientação.</li>
+              <li>❌ For reprovado duas vezes no Exame de Qualificação.</li>
+              <li> For reprovado na defesa da Dissertação ou Trabalho Final.</li>
+              <li>❌ Exceder o prazo máximo de conclusão (24 meses + 6 de prorrogação).</li>
+              <li>❌ Não realizar matrícula nos prazos estabelecidos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 13 -->
+      <div class="faq-item" data-categoria="pesquisa" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-13" id="faq-perg-13">
+          <span class="faq-numero" aria-hidden="true">13</span>
+          <span>Quais são os requisitos para obter o título de Mestre?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-13" role="region" aria-labelledby="faq-perg-13">
+          <div class="faq-resposta-inner">
+            <p>Para receber o diploma de Mestre em Direito, você precisa:</p>
+            <ul>
+              <li>✅ Concluir todos os créditos exigidos (33 créditos).</li>
+              <li>✅ Ser aprovado no Exame de Suficiência em Língua Estrangeira.</li>
+              <li>✅ Ser aprovado no Exame de Qualificação.</li>
+              <li>✅ Ser aprovado na defesa da Dissertação ou Trabalho Final.</li>
+              <li>✅ Entregar a versão final no prazo (60 dias após a defesa).</li>
+            </ul>
+            <p class="nota">🎓 O diploma é expedido pela Seção de Expedição de Diplomas da UEPG.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 14 -->
+      <div class="faq-item" data-categoria="administrativo" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-14" id="faq-perg-14">
+          <span class="faq-numero" aria-hidden="true">14</span>
+          <span>A quem posso recorrer de decisões do Colegiado?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-14" role="region" aria-labelledby="faq-perg-14">
+          <div class="faq-resposta-inner">
+            <p>Das decisões do Colegiado do Programa, você pode recorrer em duas instâncias:</p>
+            <ol>
+              <li>1️ <strong>CPG</strong> — Comissão de Pós-Graduação da UEPG.</li>
+              <li>2️⃣ <strong>CEPE</strong> — Conselho de Ensino, Pesquisa e Extensão (última instância universitária).</li>
+            </ol>
+            <p> Os recursos devem ser protocolados pelo SEI: <a href="https://sisei.apps.uepg.br/protocolo-digital" target="_blank" rel="noopener noreferrer">sisei.apps.uepg.br/protocolo-digital</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERGUNTA 15 -->
+      <div class="faq-item" data-categoria="geral" role="listitem">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq-resp-15" id="faq-perg-15">
+          <span class="faq-numero" aria-hidden="true">15</span>
+          <span>Onde encontro normas, editais e contato?</span>
+          <svg class="faq-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-resposta" id="faq-resp-15" role="region" aria-labelledby="faq-perg-15">
+          <div class="faq-resposta-inner">
+            <p>Todas as informações oficiais estão disponíveis no site do programa:</p>
+            <ul>
+              <li>🌐 <strong>Site oficial:</strong> <a href="https://www2.uepg.br/direito/mestrado/" target="_blank" rel="noopener noreferrer">www2.uepg.br/direito/mestrado</a></li>
+              <li>📜 <strong>Normas completas:</strong> <a href="https://www2.uepg.br/direito/mestrado/normas/" target="_blank" rel="noopener noreferrer">www2.uepg.br/direito/mestrado/normas</a></li>
+              <li>📢 <strong>Editais:</strong> <a href="https://www2.uepg.br/direito/mestrado/editais/" target="_blank" rel="noopener noreferrer">www2.uepg.br/direito/mestrado/editais</a></li>
+              <li> <strong>Calendário acadêmico:</strong> seção "Calendários" do site.</li>
+              <li>✉️ <strong>E-mail:</strong> <a href="mailto:mestradodireitouepg@uepg.br">mestradodireitouepg@uepg.br</a></li>
+              <li> <strong>Telefone:</strong> (42) 3220-3451 / 3220-3452</li>
+            </ul>
+            <p class="nota">📘 <strong>Base legal:</strong> Regulamento do PPGD (Resolução CEPE nº 2022.13), INs nº 06/2024, 08/2024, 09/2025, 10/2025 e 12/2025.</p>
+            <p>📖 Em conformidade com a Lei Federal nº 15.263/2025 (Política Nacional de Linguagem Simples) e orientações do Manual de Transparência do TCE-PR (item 18.2).</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <p><strong>UEPG LegalTechLab</strong> — Laboratório de Tecnologia e Inovação em Direito</p>
+    <p>Universidade Estadual de Ponta Grossa · Setor de Ciências Jurídicas</p>
+    <p style="margin-top:.75rem;">
+      <a href="https://www2.uepg.br/direito/mestrado/" target="_blank" rel="noopener">🔗 Site do Mestrado</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15263.htm" target="_blank" rel="noopener">Lei nº 15.263/2025</a>
+    </p>
+    <p style="margin-top:.75rem;font-size:.78rem;opacity:.6;">FAQ em linguagem simples conforme a Lei nº 15.263/2025 · Política Nacional de Linguagem Simples</p>
+  </div>
+</footer>
+
+<!-- ===== RODAPÉ COM INFORMAÇÕES DE ACESSIBILIDADE ===== -->
+<div id="rodape-acessibilidade" class="acessibilidade-info" tabindex="-1">
+  <div id="info-acessibilidade">
+    <strong>📌 Acessibilidade – Atalhos do teclado (eMAG):</strong><br>
+    • <kbd>Alt + 1</kbd> – Ir para o conteúdo principal<br>
+    • <kbd>Alt + 4</kbd> – Ir para este rodapé<br>
+    • <kbd>Alt + 0</kbd> – Ir para as informações de acessibilidade<br>
+    <br>
+    <strong>🔊 Ferramentas disponíveis nesta página:</strong><br>
+    ✓ <strong>VLibras</strong> – Tradutor para Língua Brasileira de Sinais (clique no ícone flutuante)<br>
+    ✓ <strong>UserWay</strong> – Painel de acessibilidade com ajustes de contraste, fonte, espaçamento, leitor de tela etc. (clique no ícone de pessoa com deficiência)<br>
+    <br>
+    <em>Este documento segue as diretrizes da Lei Brasileira de Inclusão (LBI) e do Modelo de Acessibilidade em Governo Eletrônico (eMAG).</em>
+  </div>
+</div>
+
+<!-- ========== VLIBRAS ========== -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  });
+</script>
+
+<!-- ========== USERWAY (gratuito) ========== -->
+<script src="https://cdn.userway.org/widget.js" data-account="SEU_ID_AQUI"></script>
+
+<script>
+/* sr-only */
+const srStyle=document.createElement('style');srStyle.textContent='.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}';document.head.appendChild(srStyle);
+
+/* =====================================================
+   TEMA ESCURO
+   ===================================================== */
+(function(){
+  const btn=document.getElementById('btnTema');
+  const html=document.documentElement;
+  const saved=localStorage.getItem('ppgd-faq-tema');
+  const sysDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const isDark=saved ? saved==='escuro' : sysDark;
+
+  function applyTheme(dark){
+    html.dataset.tema = dark ? 'escuro' : '';
+    btn.textContent = dark ? '☀️' : '🌙';
+    btn.setAttribute('aria-label', dark ? 'Ativar modo claro' : 'Ativar modo escuro');
+  }
+
+  applyTheme(isDark);
+  btn.addEventListener('click', function(){
+    const currentDark = html.dataset.tema === 'escuro';
+    const newDark = !currentDark;
+    applyTheme(newDark);
+    localStorage.setItem('ppgd-faq-tema', newDark ? 'escuro' : 'claro');
+  });
+})();
+
+/* =====================================================
+   FAQ ACCORDION (WCAG 2.1 - ARIA)
+   ===================================================== */
+(function(){
+  const items = document.querySelectorAll('.faq-item');
+  
+  items.forEach(function(item){
+    const btn = item.querySelector('.faq-pergunta');
+    
+    btn.addEventListener('click', function(){
+      const isOpen = item.classList.contains('aberto');
+      
+      // Fecha todos os outros (comportamento accordion)
+      items.forEach(function(otherItem){
+        if(otherItem !== item && otherItem.classList.contains('aberto')){
+          otherItem.classList.remove('aberto');
+          otherItem.querySelector('.faq-pergunta').setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Toggle atual
+      item.classList.toggle('aberto');
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+    
+    // Teclado: Enter e Space
+    btn.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        btn.click();
+      }
+    });
+  });
+})();
+
+/* =====================================================
+   FILTRO POR CATEGORIA
+   ===================================================== */
+(function(){
+  const botoes = document.querySelectorAll('.faq-cat-btn');
+  const items = document.querySelectorAll('.faq-item');
+  
+  botoes.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      const categoria = btn.dataset.categoria;
+      
+      // Atualiza botões ativos
+      botoes.forEach(function(b){
+        b.classList.remove('ativo');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('ativo');
+      btn.setAttribute('aria-selected', 'true');
+      
+      // Filtra itens
+      items.forEach(function(item){
+        if(categoria === 'todas' || item.dataset.categoria === categoria){
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+
+/* =====================================================
+   BUSCA COM DESTAQUE
+   ===================================================== */
+(function(){
+  const input = document.getElementById('buscaInput');
+  const sem = document.getElementById('semResultado');
+  const items = document.querySelectorAll('.faq-item');
+  
+  input.addEventListener('input', function(){
+    const termo = this.value.toLowerCase().trim();
+    let vis = 0;
+    
+    items.forEach(function(item){
+      const texto = item.textContent.toLowerCase();
+      const show = !termo || texto.includes(termo);
+      item.style.display = show ? '' : 'none';
+      if(show) vis++;
+    });
+    
+    sem.style.display = (termo && vis === 0) ? 'block' : 'none';
+  });
+})();
+</script>
+</body>
+</html>
